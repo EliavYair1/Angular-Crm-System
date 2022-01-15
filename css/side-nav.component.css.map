@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,EAAE,CAAC;EACD,MAAM,EAAE,IAAI;CACb",
+    "sources": [
+        "../src/app/components/sideNav/side-nav/side-nav.component.scss"
+    ],
+    "names": [],
+    "file": "side-nav.component.css"
+}

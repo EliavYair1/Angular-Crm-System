@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/utils/page-header/page-header.component.scss"
+    ],
+    "names": [],
+    "file": "page-header.component.css"
+}

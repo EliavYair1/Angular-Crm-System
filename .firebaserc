@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "royale-crmproject": {
+      "hosting": {
+        "royal-Crm": [
+          "royale-crmproject"
+        ]
+      }
+    }
+  }
+}

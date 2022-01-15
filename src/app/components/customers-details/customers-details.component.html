@@ -1,0 +1,58 @@
+<app-page-header title="review customer" description="review customer's details" icon="bi bi-person-circle">
+</app-page-header>
+
+<div class="mt-4">
+  <div class="row">
+    <div class="col-12">
+      <p>
+        <a routerLink=".." class="btn btn-secondary">Back </a>
+      </p>
+
+      <table *ngIf="customers$ | async as customer; else loading" class="table table-bordered">
+        <tbody>
+          <tr>
+            <td><b>First Name: </b></td>
+            <td>{{ customer.firstName }}</td>
+          </tr>
+          <tr>
+            <td><b>Last Name: </b></td>
+            <td>{{ customer.lastName }}</td>
+          </tr>
+          <tr>
+            <td><b>Email: </b></td>
+            <td>
+              <a [href]="'mailto:' + customer.email">
+                {{ customer.email }}
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td><b>Phone: </b></td>
+            <td>
+              <a [href]="'tel:' + customer.phone">
+                {{ customer.phone }}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Address: </b></td>
+            <td>{{ customer.address }}</td>
+          </tr>
+          <tr>
+            <td><b>Notes: </b></td>
+            <td>{{ customer.notes }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<ng-template #loading>
+  <p><i>loading...</i></p>
+</ng-template>
+
+<ng-template #noCustomer>
+  <p><i>No such customer...</i></p>
+</ng-template>

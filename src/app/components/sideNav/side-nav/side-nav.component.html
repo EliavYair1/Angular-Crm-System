@@ -1,0 +1,19 @@
+<ul class="nav flex-column pt-4 bg-dark ">
+  <li class="nav-item" *ngFor="let item of navItem">
+    <a [routerLink]='item.link' routerLinkActive='bg-primary' class="nav-link text-white">
+      <i [class]="item.icon"></i>
+
+      <span class="ms-3">{{item.title}}</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a href="" class="nav-link text-white">
+      <i class="bi bi-alarm-fill"></i>
+
+      <span class="ms-3">item</span>
+    </a>
+  </li>
+  <li class="nav-item">
+
+  </li>
+</ul>

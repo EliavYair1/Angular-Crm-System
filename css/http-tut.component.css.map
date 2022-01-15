@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/app/tut/http-tut/http-tut.component.scss"
+    ],
+    "names": [],
+    "file": "http-tut.component.css"
+}

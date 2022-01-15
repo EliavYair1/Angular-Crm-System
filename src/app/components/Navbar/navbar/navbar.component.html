@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow ">
+  <div class="container-fluid">
+
+
+    <a class="navbar-brand text-primary" href="#">E.Y Crm &nbsp;<i
+        class="bi bi-cloud-lightning-fill text-warning"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0 me-10">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false"> {{(user$ | async)?.email}}
+
+          </a>
+          <ul class="dropdown-menu end-0 " aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item " href="#"><i class="bi bi-gear-wide"></i>&nbsp; my preferences</a>
+            </li>
+            <li><a class="dropdown-item" appLogout href="#"><i class="bi bi-box-arrow-in-right"></i>&nbsp; Sign Out</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
